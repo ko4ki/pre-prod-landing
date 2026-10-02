@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hunchex is a forecasting game built around questions, crowds, and points.">
+  <title>Hunchex — coming soon</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/tokens.css">
+  <style>
+    * { box-sizing: border-box; }
+    html { min-height: 100%; background: var(--bg); }
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: var(--space-6);
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 50% 0%, var(--accent-tint), transparent 42rem),
+        var(--bg);
+      font-family: var(--font-sans);
+    }
+    main { width: min(100%, 44rem); }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-3);
+      color: var(--accent-strong);
+      font-size: var(--size-xl);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    .brand img { width: var(--space-8); height: var(--space-8); }
+    .card {
+      margin-top: var(--space-8);
+      padding: clamp(var(--space-6), 6vw, 3.5rem);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-card);
+      background: var(--surface);
+    }
+    .eyebrow {
+      margin: 0 0 var(--space-4);
+      color: var(--accent-strong);
+      font-family: var(--font-mono);
+      font-size: var(--size-sm);
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    h1 {
+      max-width: 14ch;
+      margin: 0;
+      font-size: clamp(2.5rem, 9vw, 5rem);
+      line-height: 0.98;
+      letter-spacing: -0.055em;
+    }
+    .intro {
+      max-width: 35rem;
+      margin: var(--space-6) 0 0;
+      color: var(--text-2);
+      font-size: clamp(var(--size-lg), 3vw, var(--size-2xl));
+      line-height: 1.5;
+    }
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      margin-top: var(--space-8);
+      padding: var(--space-2) var(--space-3);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-pill);
+      color: var(--text-2);
+      background: var(--bg);
+      font-family: var(--font-mono);
+      font-size: var(--size-sm);
+    }
+    .status::before {
+      width: var(--space-2);
+      height: var(--space-2);
+      border-radius: var(--radius-pill);
+      background: var(--accent);
+      content: "";
+    }
+    footer {
+      margin-top: var(--space-5);
+      color: var(--text-2);
+      font-size: var(--size-sm);
+    }
+    @media (max-width: 32rem) {
+      body { padding: var(--space-4); }
+      .card { margin-top: var(--space-6); padding: var(--space-6); }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="brand">
+      <img src="assets/mark.svg" alt="" width="32" height="32">
+      <span>hunchex</span>
+    </div>
+    <section class="card" aria-labelledby="title">
+      <p class="eyebrow">Forecasting, made social</p>
+      <h1 id="title">A better way to test your hunch.</h1>
+      <p class="intro">
+        Hunchex is a forecasting game about real questions, crowd confidence, and points.
+        We are building the first version now.
+      </p>
+      <p class="status">Coming soon</p>
+    </section>
+    <footer>Points are for play and cannot be bought or exchanged for money.</footer>
+  </main>
+</body>
+</html>
